@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import SearchBar from './components/SearchBar/SearchBar';
 import Card from './components/Card/Card';
+import Pagination from './components/Pagination/Pagination';
 import Footer from './components/Footer/Footer';
 import items from "./items";
 
@@ -23,9 +24,6 @@ function App() {
       <Navbar/>
       <SearchBar />
       
-      <h1> Hello World! </h1> 
-
-
       <div className="card-grid"> 
       {itemsArray.map((items, index) => (
         <Card
@@ -42,7 +40,9 @@ function App() {
 
 
 
-
+      <Pagination
+          
+        />
       
       <Footer/>
     </div>
