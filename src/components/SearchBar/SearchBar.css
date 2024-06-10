@@ -2,6 +2,7 @@
 .search-bar-container {
   padding: 2rem 8rem;
   margin-top: 5rem;
+  
 }
 
 .search-title {
@@ -11,7 +12,9 @@
 
 .search-bar {
   display: flex;
-  gap: 1rem; }
+  gap: 1rem; 
+  
+}
 
 .game-select-container, .search-input-container {
   display: flex;
@@ -19,7 +22,9 @@
   background: hsl(229, 16%, 34%);
   border-radius: 5px;
   padding: 0.5rem;
-  flex-grow: 1; }
+  flex-grow: 1; 
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.286);
+}
 
 .icon {
   color: #39e29d;

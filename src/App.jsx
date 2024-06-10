@@ -5,6 +5,7 @@ import SearchBar from './components/SearchBar/SearchBar';
 import Card from './components/Card/Card';
 import Pagination from './components/Pagination/Pagination';
 import Footer from './components/Footer/Footer';
+import Paymentes from './components/Payments/Payments';
 import items from "./items";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Pagination />
         </div>
       </div>
+      <Paymentes/>
       <Footer />
     </div>
   );

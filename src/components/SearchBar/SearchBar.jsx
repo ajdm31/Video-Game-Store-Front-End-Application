@@ -8,7 +8,7 @@ import controllerIcon from '../../assets/console-game-svgrepo-com.svg';
 function SearchBar() {
   return (
     <div className="search-bar-container">
-      <h2 className="search-title">Buy The Legend of Zelda Items</h2>
+      <h1 className="search-title">Buy The Legend of Zelda Items</h1>
       <div className="search-bar">
         <div className="game-select-container">
         <img src={swordIcon} alt="game" className="game-icon-search" />

@@ -21,6 +21,7 @@
   border-color: #4c6085;
   border-style: solid;
   border-width: 0.1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.286);
 }
 
 .container-header {

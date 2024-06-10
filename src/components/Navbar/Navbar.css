@@ -1,104 +1,109 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background: #2F3141;
-    color: #fff;
-  }
-  
-  .navbar-logo img {
-    margin-left: 2rem;
-  }
-  
-  .navbar-links {
-    display: flex;
-    list-style: none;
-  }
-  
-  .navbar-links li {
-    margin: 0 1rem;
-    font-size: 12px;
-    font-family:'Roboto', sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center; 
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    color: #FAFBFD;
-  }
-
-  .navbar-links li img {
-    margin-left: 0.2rem;
-    width: 18px;
-    height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #2F3141;
+  color: #fff;
+  border-bottom: 1px solid #4c6085;
 }
-  
-  .navbar-options {
-    display: flex;
-    align-items: center;
-    display: flex;
-    align-items: center; 
-  }
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  margin-left: 2rem;
+}
+
+.navbar-divider {
+  width: 1px;
+  height: 40px;
+  background-color: white;
+  margin-left: 2rem;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin-right: 20rem; 
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #FAFBFD;
+}
+
+.navbar-links li img {
+  margin-left: 0.2rem;
+  width: 18px;
+  height: 16px;
+}
+
+.navbar-options {
+  display: flex;
+  align-items: center;
+}
 
 .navbar-currency {
-    margin-right: 3.75rem;
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center; 
+  margin-right: 3.75rem;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-currency img {
-    width: 18px;
-    height: 16px;
-    margin-right: 0.3rem;
-    margin-left: 0.2rem;
-    
-  }
-
+  width: 18px;
+  height: 16px;
+  margin-right: 0.3rem;
+  margin-left: 0.2rem;
+}
 
 .navbar-cart {
-    margin-right: 2rem;
-    font-size: 12px;    
-    font-family:'Roboto', sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center; 
-    
+  margin-right: 2rem;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-cart img {
-    width: 18px;
-    height: 16px;
-    margin-right: 0.3rem;
-    
-    
-  }
+  width: 18px;
+  height: 16px;
+  margin-right: 0.3rem;
+}
 
 .navbar-signin {
-    padding: 0.5rem 1rem;
-    margin-right: 2rem;
-    
-    background: #64C292;
-    color: #2F3141;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+  background: #64C292;
+  color: #2F3141;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
 
-    font-size: 12px;
-    font-family:'Roboto', sans-serif;
-    font-weight: bold;
-    
-  }
-
-  .avatar-icon{
-    position: relative;
-    height: 1rem;
-    margin-left:0.5rem;
-    top: 2px; 
+.avatar-icon {
+  position: relative;
+  height: 1rem;
+  margin-left: 0.5rem;
+  top: 2px;
 }
