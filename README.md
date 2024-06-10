@@ -9,7 +9,7 @@ Welcome to the Video Game Store FrontEnd Mock Application! This project features
 - [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage/Examples](#usage/examples)
+- [Usage](#usage)
 - [Color Reference](#color-reference)
 - [Tech Stack and File Structure](#tech-stack-and-file-structure)
 - [Contributing](#contributing)
@@ -58,7 +58,7 @@ To run this project locally, follow these steps:
 ```
 
 The application should now be running on http://localhost:3000.
-# Usage/Examples
+# Usage
 
 Once the application is running, you can interact with various components:
 
