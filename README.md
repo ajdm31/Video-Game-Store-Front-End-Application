@@ -1,70 +1,143 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Video Game Store FrontEnd Mock Application 
 
-## Available Scripts
+Welcome to the Video Game Store FrontEnd Mock Application! This project features a responsive web application with design elements inspired by the classic video game "The Legend of Zelda". The application includes a navigation bar and search bar design, item display with cards, pagination, payment logos, and a footer. The layout is fully responsive, ensuring a seamless experience across devices of all sizes.
 
-In the project directory, you can run:
 
-### `npm start`
+# Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage/Examples](#usage/examples)
+- [Color Reference](#color-reference)
+- [Tech Stack and File Structure](#tech-stack-and-file-structure)
+- [Contributing](#contributing)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Demo
 
-### `npm test`
+Check out the live demo [here](https://66676f98b12c0a55ac56a81e--cheerful-rugelach-aec45c.netlify.app/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Responsive navigation bar with dropdown menus
+- Animated hamburger menu for mobile devices
+- Elegant Search bar 
+- Dynamic item display with cards
+- Payment logos section
+- Footer with social media links and additional information
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Installation
 
-### `npm run eject`
+To run this project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  git https://github.com/ajdm31/Video-Game-Store-Front-End-Application.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. cd into repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  cd Video-Game-Store-Front-End-Application
+```
+    
+3. Install dependencies:
 
-## Learn More
+```bash
+  npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+ npm start
+```
 
-### Code Splitting
+The application should now be running on http://localhost:3000.
+# Usage/Examples
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Once the application is running, you can interact with various components:
 
-### Analyzing the Bundle Size
+- **Responsive:** Resize the browser window or open the site on a mobile device to see how it adapts gracefully to different screens.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Navigation Bar:** Experience different screen sizes and on a mobile device to see the hamburger menu. Clicking the Triforce icon will toggle the menu, displaying the navigation links and options.
 
-### Making a Progressive Web App
+- **Item Display:** Browse through the items and adjust quantities.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Animations:** Slide In/Out: Smooth animations enhance the user experience when toggling the hamburger menu.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Color Reference
 
-### Deployment
+- Inspiration:
+The design of this project draws heavily from "The Legend of Zelda" series, aiming to capture the essence of adventure, elegance, and courage that the game series is known for.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Icons:
+For this project, I’ve chosen to incorporate icons from “The Legend of Zelda.” These iconic symbols show a connection to the game series and adds a touch of Zelda magic to the design.
 
-### `npm run build` fails to minify
+- Colors:
+**Background:** The dark background provides a strong contrast, making the white text and icons pop.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Highlight:** The sign-in button uses a vibrant green, reminiscent of the lush, green landscapes of Hyrule.
+
+
+# Tech Stack and File Structure
+
+**Client:** ReactJS, CSS
+
+```
+video-game-store-front-end-application/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Navbar.css
+│   │   ├── SearchBar/
+│   │   │   ├── SearchBar.jsx
+│   │   │   ├── SearchBar.css
+│   │   ├── Card/
+│   │   │   ├── Card.jsx
+│   │   │   ├── Card.css
+│   │   ├── Pagination/
+│   │   │   ├── Pagination.jsx
+│   │   │   ├── Pagination.css
+│   │   ├── Payments/
+│   │   │   ├── Payments.jsx
+│   │   │   ├── Payments.css
+│   │   ├── Footer/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Footer.css
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+├── items.js
+├── package.json
+├── README.md
+
+```
+
+- src/assets: Contains all the images and icons used in the project.
+- src/components: Contains all the React components and their corresponding styles.
+- src/App.jsx: The main application component.
+- items.js: Contains the items data.
+
+
+
+
+# Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1) Fork the repository.
+2) Create a new branch (git checkout -b feature-branch).
+3) Make your changes and commit them (git commit -m 'Add new feature').
+4) Push to the branch (git push origin feature-branch).
+5) Create a new Pull Request.
+
