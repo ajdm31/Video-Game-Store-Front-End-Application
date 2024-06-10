@@ -73,16 +73,17 @@ Once the application is running, you can interact with various components:
 
 # Color Reference
 
-- Inspiration:
+- **Inspiration**:
 The design of this project draws heavily from "The Legend of Zelda" series, aiming to capture the essence of adventure, elegance, and courage that the game series is known for.
 
-- Icons:
+- **Icons**:
 For this project, I’ve chosen to incorporate icons from “The Legend of Zelda.” These iconic symbols show a connection to the game series and adds a touch of Zelda magic to the design.
 
-- Colors:
-**Background:** The dark background provides a strong contrast, making the white text and icons pop.
+- **Colors**:
 
-**Highlight:** The sign-in button uses a vibrant green, reminiscent of the lush, green landscapes of Hyrule.
+    *Background:* The dark background provides a strong contrast, making the white text and icons pop.
+
+    *Highlight:* The sign-in button uses a vibrant green, reminiscent of the lush, green landscapes of Hyrule.
 
 
 # Tech Stack and File Structure
