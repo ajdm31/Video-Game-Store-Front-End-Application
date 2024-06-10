@@ -1,77 +1,90 @@
 .footer {
-    background: #303141;
-    color: #fff;
-    padding: 2rem 10rem;
-  }
-  
-  .footer-columns {
-    display: flex;
-    justify-content: space-around;
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .footer-column {
-    width: 15rem;
-    
-  }
-  
-  
-  .footer-logo {
-    display: inline-block;
-  }
+  background: #303141;
+  color: #fff;
+  padding: 2rem 10rem;
+}
 
-  .footer-logo img {
-    padding-bottom: 1rem;
-  }
+.footer-social-media {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  
+}
 
-  .footer-logo span {
-    color: #f8fafe;
-  }
+.footer-social-media img {
+  width: 36px;
+  height: 36px;
+  
+}
 
-  
-  .footer-column h4 {
-    margin-bottom: 1rem;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column li {
-    margin-bottom: 0.5rem;
-    
-  }
-  
-  .footer-column a {
-    text-decoration: none;
-    color: #777883;
-  }
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background: #404c67;
+  margin: 1rem 0;
+}
 
-  .star-icon img {
-    width: 18px;
-    height: 16px;
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-column {
+  width: 15rem;
+}
+
+.footer-logo {
+  display: inline-block;
+}
+
+.footer-logo img {
+  padding-bottom: 1rem;
+}
+
+.footer-logo span {
+  color: #f8fafe;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #777883;
+}
+
+.star-icon img {
+  width: 18px;
+  height: 16px;
 }
 
 .star-image {
-    float: left;
-    margin-top: 1rem;
-    
-  }
+  float: left;
+  margin-top: 1rem;
+}
 
+.star-icon h4 {
+  margin-left: 6rem;
+  color: #777883;
+}
 
-  .star-icon h4{
-    margin-left: 6rem;
-    color: #777883;
-  }
-
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    color: #777883;
-  }
-  
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #777883;
+}

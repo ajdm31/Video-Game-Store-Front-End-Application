@@ -1,21 +1,31 @@
 import React from 'react';
 import './Footer.css';
 import logo from "../../assets/chicks-logo-large.svg";
-import StarIcon from "../../assets/star-icon.svg"
+import StarIcon from "../../assets/star-icon.svg";
+import FacebookIcon from "../../assets/facebook-svgrepo-com.svg";
+import TwitterIcon from "../../assets/twitter-svgrepo-com.svg";
+import InstagramIcon from "../../assets/instagram-svgrepo-com.svg";
+import DiscordIcon from "../../assets/discord-v2-svgrepo-com.svg";
 
-function Footer () {
+function Footer() {
   return (
     <footer className="footer">
+      <div className="footer-social-media">
+        <img src={FacebookIcon} alt="Facebook" />
+        <img src={InstagramIcon} alt="Instagram" />
+        <img src={TwitterIcon} alt="Twitter" />        
+        <img src={DiscordIcon} alt="Discord" />
+      </div>
+      <hr className="footer-divider" />
       <div className="footer-columns">
         <div className="footer-column">
           <div className="footer-logo">
-          <img src={logo} alt="chick gold logo" />
-          <span>support@chicksgold.com</span>
+            <img src={logo} alt="chick gold logo" />
+            <span>support@chicksgold.com</span>
           </div>
         </div>
         <div className="footer-column">
-          <h4>Chicks Gold</h4>  
-          
+          <h4>Chicks Gold</h4>
           <ul>
             <li><a href="#games">Games</a></li>
             <li><a href="#about">About Us</a></li>
@@ -39,22 +49,21 @@ function Footer () {
           </ul>
         </div>
         <div className="footer-column star-icon">
-            <div className="star-image">
-                <img src={StarIcon} alt="Star Calification icon" />
-            </div>
-            <div className="star-image">
-                <img src={StarIcon} alt="Star Calification icon" />
-            </div>
-            <div className="star-image">
-                <img src={StarIcon} alt="Star Calification icon" />
-            </div>
-            <div className="star-image">
-                <img src={StarIcon} alt="Star Calification icon" />
-            </div>
-            <div className="star-image">
-                <img src={StarIcon} alt="Star Calification icon" />
-            </div>        
-
+          <div className="star-image">
+            <img src={StarIcon} alt="Star Calification icon" />
+          </div>
+          <div className="star-image">
+            <img src={StarIcon} alt="Star Calification icon" />
+          </div>
+          <div className="star-image">
+            <img src={StarIcon} alt="Star Calification icon" />
+          </div>
+          <div className="star-image">
+            <img src={StarIcon} alt="Star Calification icon" />
+          </div>
+          <div className="star-image">
+            <img src={StarIcon} alt="Star Calification icon" />
+          </div>
           <h4 className="star-icon-title">Trustpilot Reviews</h4>
         </div>
       </div>
@@ -62,7 +71,7 @@ function Footer () {
         <p>&copy; 2017 - 2020 ChicksGold.com. All Rights Reserved</p>
       </div>
     </footer>
-  )
-};
+  );
+}
 
 export default Footer;
