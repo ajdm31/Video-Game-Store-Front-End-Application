@@ -6,7 +6,8 @@
   }
   
   .page, .arrow {
-    background: #444;
+
+     background: rgba(0, 0, 0, 0);
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;

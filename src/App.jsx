@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -8,45 +7,49 @@ import Pagination from './components/Pagination/Pagination';
 import Footer from './components/Footer/Footer';
 import items from "./items";
 
-
 function App() {
 
   const [itemsArray, setItemsArray] = useState([]);
 
   useEffect(() => {
-    setItemsArray(items); // Initialize the itemsArray state with data from items.js
+    setItemsArray(items);
   }, []);
 
-  
-  
   return (
-    <div>
-      <Navbar/>
-      <SearchBar />
-      
-      <div className="card-grid"> 
-      {itemsArray.map((items, index) => (
-        <Card
-        key={index}
-        id={index}
-        title={items.title}
-        img={items.img}
-        gameIcon={items.gameIcon}
-        description={items.description}
-        price={items.price}
-        />
-      ))}
+    <div className="main-background">
+      <Navbar />
+      <div className="content-wrapper">
+        <SearchBar />
+        <div className="main-container">
+          <div className="container-header">
+            <div className="header-left">
+              <p>Showing 15 - from 120</p>
+            </div>
+            <div className="header-right">
+              <select className="sort-options">
+                <option value="featured">Sort by: Featured</option>
+                
+              </select>
+            </div>
+          </div>
+          <div className="card-grid">
+            {itemsArray.map((item, index) => (
+              <Card
+                key={index}
+                id={index}
+                title={item.title}
+                img={item.img}
+                gameIcon={item.gameIcon}
+                description={item.description}
+                price={item.price}
+              />
+            ))}
+          </div>
+          <Pagination />
+        </div>
       </div>
-
-
-
-      <Pagination
-          
-        />
-      
-      <Footer/>
+      <Footer />
     </div>
-    
   );
 }
 

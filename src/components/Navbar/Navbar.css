@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 10.5rem; */
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: #2F3141;
@@ -11,7 +10,6 @@
   
   .navbar-logo img {
     margin-left: 2rem;
-    
   }
   
   .navbar-links {
@@ -101,7 +99,6 @@
   .avatar-icon{
     position: relative;
     height: 1rem;
-    /* margin-right:10px; */
     margin-left:0.5rem;
     top: 2px; 
 }
