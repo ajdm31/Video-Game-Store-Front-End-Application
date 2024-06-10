@@ -1,11 +1,9 @@
-
 .main-background {
   background-image: url('./assets/the-legend-of-zelda-wallpaper-overlay.jpg');
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  
 }
 
 .content-wrapper {
@@ -33,7 +31,6 @@
 
 .header-left p {
   color: #fff;
-  
 }
 
 .header-right .sort-options {
@@ -54,4 +51,41 @@
 .card-grid > * {
   flex: 1 1 calc(20% - 1rem); 
   max-width: calc(20% - 1rem);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .card-grid > * {
+    flex: 1 1 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .card-grid > * {
+    flex: 1 1 calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid > * {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+
+  .content-wrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-grid > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .main-container {
+    padding: 0.5rem;
+  }
 }

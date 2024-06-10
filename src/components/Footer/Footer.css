@@ -6,16 +6,13 @@
 
 .footer-social-media {
   display: flex;
-  justify-content: flex-start;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  
 }
 
 .footer-social-media img {
   width: 36px;
   height: 36px;
-  
 }
 
 .footer-divider {
@@ -37,11 +34,13 @@
 }
 
 .footer-logo {
-  display: inline-block;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .footer-logo img {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem; 
 }
 
 .footer-logo span {
@@ -87,4 +86,46 @@
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   color: #777883;
+}
+
+/* Responsive Styles for Footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 2rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-column {
+    width: 100%;
+    text-align: center;    
+  }
+
+  .footer-social-media {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .star-image {
+    float: none;
+    margin: 0.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+
+    
+  }
+
+  .star-icon h4 {
+    margin-left: 0;
+  }
 }

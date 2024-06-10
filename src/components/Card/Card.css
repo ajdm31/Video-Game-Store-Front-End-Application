@@ -146,7 +146,6 @@
     padding: 0.8rem 1rem;
     cursor: pointer;
     border-radius: 5px;
-    /* width: 6rem; */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.168);
     
   }
@@ -161,7 +160,6 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
-    /* width: 6rem; */
     width: 6rem;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.168);
   }
@@ -169,4 +167,30 @@
   .shopping-cart-icon {
     margin-left: 0.5rem;
   }
+
+
+  /* Responsive Styles for Card */
+@media (max-width: 1200px) {
+  .card {
+    width: calc(25% - 1.6rem);
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: calc(33.33% - 1.6rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 1.6rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}
   

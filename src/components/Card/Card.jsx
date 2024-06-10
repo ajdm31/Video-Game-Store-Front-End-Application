@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Card.css';
 import { FaShoppingCart, FaArrowUp, FaArrowDown } from 'react-icons/fa';
-import mask from "../../assets/mm-fierce-deity-mask.png";
 
 function Card({title,img,gameIcon,price, description}) {
     const [quantity, setQuantity] = useState(1);

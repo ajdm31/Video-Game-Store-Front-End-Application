@@ -1,0 +1,33 @@
+.logos-section {
+  display: flex;
+  align-items: center;
+  padding: 1rem 10rem;
+  background: #2b2c3b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 5rem;
+  padding-left: 0.5rem;
+}
+
+/* Responsive Styles for Logos Section */
+@media (max-width: 768px) {
+  .logos-section {
+    flex-direction: column;
+    padding: 1rem 2rem; 
+  }
+
+  .logos-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 10rem;
+    background: #2b2c3b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .logo {
+    padding: 0.5rem 0; 
+  }
+}

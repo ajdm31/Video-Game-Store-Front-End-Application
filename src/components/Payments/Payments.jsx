@@ -1,5 +1,5 @@
 import React from 'react';
-import './Paymentes.css';
+import './Payments.css';
 import logo1 from '../../assets/visa-logo-svgrepo-com.svg';
 import logo2 from '../../assets/mastercard-full-svgrepo-com.svg';
 import logo3 from '../../assets/American-Express-Logo-PNG-Picture.png';

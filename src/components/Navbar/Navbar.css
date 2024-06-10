@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   background: #2F3141;
   color: #fff;
   border-bottom: 1px solid #4c6085;
+  position: relative;
 }
 
 .navbar-logo-container {
@@ -27,8 +27,15 @@
 
 .navbar-links {
   display: flex;
+  align-items: center;
   list-style: none;
-  margin-right: 20rem; 
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.navbar-links ul {
+  display: flex;
+  list-style: none;
 }
 
 .navbar-links li {
@@ -38,12 +45,15 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-
 }
 
 .navbar-links a {
   text-decoration: none;
   color: #FAFBFD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .navbar-links li img {
@@ -106,4 +116,122 @@
   height: 1rem;
   margin-left: 0.5rem;
   top: 2px;
+}
+
+.hamburger-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+/* Keyframes for animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+/* Responsive Styles for Navbar */
+@media (max-width: 992px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #2F3141;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1000;
+    animation: slideOut 0.3s forwards;
+  }
+
+  .navbar-links.open {
+    display: flex;
+    width: 95%;
+    animation: slideIn 0.3s forwards;
+  }
+
+  .navbar-links {
+    display: flex;
+    width: 95%;
+    animation: slideOut 0.3s forwards;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-links li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-links li img {
+    margin-right: 1.5rem;
+  }
+
+  .navbar-logo {
+    margin-left: 1rem;
+  }
+
+  .navbar-options {
+    display: none;
+  }
+
+  .navbar-options-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-currency, .navbar-cart, .navbar-signin {
+    margin: 0.5rem 0;
+  }
+
+  .navbar-signin {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+  .hamburger-menu img {
+    width: 36px;
+    height: 36px;
+  }
 }
